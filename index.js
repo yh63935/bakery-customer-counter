@@ -1,34 +1,39 @@
 let count = 0;
 let savedEntries = 0;
+const countEl = document.getElementById("count");
+const savedEntriesEl = document.getElementById('saved-entries');
+const errorEl = document.getElementById("error");
+const saveBtn = document.querySelector('.save-btn')
 
 function increase() {
     count++;
-    document.getElementById("count").innerText = count;
+    countEl.innerText = count;
 }
 
 function decrease() {
     if(count>0) {
         count--;
-        document.getElementById("count").innerText = count;
+        countEl.innerText = count;
     }
 }
 
 function save() {
+    saveBtn.disabled = false;
     let savedCount = count + ' - ';
-    document.getElementById('saved-entries').textContent += savedCount;
+    savedEntriesEl.textContent += savedCount;
     count = 0;
-    document.getElementById("count").innerText = count;
+    countEl.innerText = count;
     savedEntries++;
     if (savedEntries>10) {
-        document.getElementById("error").innerText = "Error: Saved too many times, please reset"
-        document.getElementsByClassName("save-btn")[0].disabled=true;
+        errorEl.innerText = "Error: Saved too many times, please reset"
+        saveBtn.disabled = true;
     }
 }
 
 function reset() {
-    document.getElementById("saved-entries").innerText="";
-    document.getElementById("error").innerText = "";
+    savedEntriesEl.innerText="";
+    errorEl.innerText = "";
     count = 0;
     savedEntries = 0;
-    document.getElementById("count").innerText = count;
+    countEl.innerText = count;
 }
