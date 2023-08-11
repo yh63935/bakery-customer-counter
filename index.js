@@ -28,4 +28,7 @@ function save() {
 function reset() {
     document.getElementById("saved-entries").innerText="";
     document.getElementById("error").innerText = "";
+    count = 0;
+    savedEntries = 0;
+    document.getElementById("count").innerText = count;
 }
