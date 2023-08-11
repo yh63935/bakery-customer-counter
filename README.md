@@ -14,7 +14,8 @@ Design:
 
 Added functionalities:
 - you can now decrease in addition to increase the count (to track people coming in and out of the store)
-- RESET button allows you to reset the log of saved counts as well as only allowing you to save 10 counts
+- RESET button allows you to reset the log of saved counts as well
+- SAVE button only allows you to save up to 10 entries, then gives error message
 - RESET button also resets the count of people in the bakery to 0
 
 Some limitations:
