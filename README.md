@@ -7,7 +7,7 @@ During my college years, the pandemic happened while I was working in a retail s
 
 Since I really enjoy baking, along with taking photos of food, this app theme is based off of imagined bakery.
 
-Based off of the Scrimba Counter App with some styling personalizations and customizations:
+Based off of the Scrimba Counter App with some added features/customizations and my own personalized design:
 
 Design:
 - app responsiveness for mobile as well as a soft pastel design
