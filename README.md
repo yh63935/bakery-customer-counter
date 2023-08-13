@@ -12,7 +12,7 @@ Based off of the Scrimba Counter App with some added features/customizations and
 Design:
 - app responsiveness for mobile as well as a soft pastel design
 
-Added functionalities:
+Added features:
 - you can now decrease in addition to increase the count (to track people coming in and out of the store)
 - RESET button allows you to reset the log of saved counts as well
 - SAVE button only allows you to save up to 10 entries, then gives error message
